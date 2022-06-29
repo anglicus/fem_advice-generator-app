@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(218deg, 23%, 16%);
+}
+
+.image-desktop {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .image-desktop {
+    display: block;
+  }
+}
+
+.image-mobile {
+  display: block;
+}
+@media (min-width: 1025px) {
+  .image-mobile {
+    display: none;
+  }
+}
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 0.6875rem;
+  line-height: 0.939375rem;
+  letter-spacing: 0.21625rem;
+  text-transform: uppercase;
+}
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 0.8125rem;
+    line-height: 1.11rem;
+    letter-spacing: 0.255625rem;
+  }
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2.0625rem;
+  letter-spacing: -0.01625rem;
+  font-weight: 800;
+}
+@media (min-width: 1025px) {
+  p {
+    font-size: 1.75rem;
+    line-height: 2.390625rem;
+  }
+}
+
+.advice {
+  position: relative;
+  margin: 120px auto 0;
+  padding: 40px 24px 64px;
+  width: 343px;
+  border-radius: 10px;
+  background-color: hsl(217deg, 19%, 24%);
+}
+@media (min-width: 1025px) {
+  .advice {
+    margin: 223px auto 0;
+    width: 540px;
+    padding: 48px 48px 72px;
+  }
+}
+.advice__heading {
+  color: hsl(150deg, 100%, 66%);
+  text-align: center;
+  margin: 0 auto 24px;
+}
+.advice__text {
+  color: hsl(193deg, 38%, 86%);
+  text-align: center;
+  margin-bottom: 24px;
+}
+@media (min-width: 1025px) {
+  .advice__text {
+    margin-bottom: 40px;
+  }
+}
+.advice__btn-new {
+  position: absolute;
+  background-color: hsl(150deg, 100%, 66%);
+  border: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+}
+.advice__btn-new:hover {
+  box-shadow: 0 0 40px 0 hsl(150deg, 100%, 66%);
+}
+.advice__btn-new:active {
+  box-shadow: 0 0 30px 10px hsl(150deg, 100%, 66%);
+}
+.advice__dice-icon {
+  position: absolute;
+  left: 50%;
+  top: 50;
+  transform: translate(-50%, -50%);
+}
+
+.attribution {
+  color: hsl(193deg, 38%, 86%);
+  margin-top: 64px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(150deg, 100%, 66%);
+}/*# sourceMappingURL=index.css.map */

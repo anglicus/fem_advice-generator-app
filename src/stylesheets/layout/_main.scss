@@ -1,0 +1,78 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/mixins" as *;  
+
+
+.advice {
+  position: relative;
+  margin: 120px auto 0;
+  padding: 40px 24px 64px;
+  width: 343px;
+  border-radius: 10px;
+
+  background-color: $darkGrayishBlue;
+
+  @include breakpoint-up(large) {
+    margin: 223px auto 0;
+    width: 540px;
+    padding: 48px 48px 72px; 
+  }
+
+  &__heading {
+    color: $neonGreen;
+    text-align: center;
+    margin: 0 auto 24px;
+  }
+
+  &__text {
+    color: $lightCyan;
+    text-align: center;
+    margin-bottom: 24px;
+
+    @include breakpoint-up(large) {
+      margin-bottom: 40px;
+    }
+
+  }
+
+  &__btn-new {
+    position: absolute;
+    background-color: $neonGreen;
+    border: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 40px 0 $neonGreen;
+    }
+
+    &:active {
+      box-shadow: 0 0 30px 10px $neonGreen;
+    }
+  }
+
+  &__dice-icon {
+    position: absolute;
+    left: 50%;
+    top: 50;
+    transform: translate(-50%, -50%);
+  }
+  
+}
+
+
+
+.attribution { 
+  color: $lightCyan;
+  margin-top: 64px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: $neonGreen;
+}

@@ -1,0 +1,33 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/mixins" as *;
+
+html {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 0.6875rem;
+  line-height: 0.939375rem;
+  // font-weight: 700;
+  letter-spacing: 0.21625rem;
+  text-transform: uppercase;
+
+  @include breakpoint-up(large) {
+    font-size: 0.8125rem;
+    line-height: 1.11rem;
+    letter-spacing: 0.255625rem;
+  }
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2.0625rem;
+  letter-spacing: -0.01625rem;
+  font-weight: 800;
+
+  @include breakpoint-up(large) {
+    font-size: 1.75rem;
+    line-height: 2.390625rem;
+  }
+}
+
